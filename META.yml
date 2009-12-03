@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               App-Pod2CpanHtml
-version:            0.01
+version:            0.02
 abstract:           Convert Pod to search.cpan.org style HTML.
 author:
     - John McNamara (jmcnamara@cpan.org)

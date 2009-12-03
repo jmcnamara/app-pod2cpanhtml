@@ -1,6 +1,13 @@
 Revision history for App-Pod2CpanHtml
 
+0.02 Dec 3 2009
+
+    + Added --no-index option to pod2cpanhtml.
+
+    + Improvements to documentation.
+
+
 0.01 Nov 29 2009
 
-        Initial CPAN release.
+    Initial CPAN release.
 

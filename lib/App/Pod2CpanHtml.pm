@@ -16,7 +16,7 @@ use Pod::Simple::HTML;
 use vars qw(@ISA $VERSION);
 
 @ISA     = 'Pod::Simple::HTML';
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 ###############################################################################
 #
@@ -53,7 +53,7 @@ Pod is Perl's I<Plain Old Documentation> format, see L<perlpod>.
 
 C<App::Pod2CpanHtml> produces HTML output similar to search.cpan.org by using the same conversion module, L<Pod::Simple::HTML> and the same CSS, L<http://search.cpan.org/s/style.css>.
 
-It should be noted, however, that this isn't the actual module that is used to create the HTML for seach.cpan.org; that source code isn't currently in the public domain. As such the HTML may not be identical but in most cases it will be quite close and visually it should be the same.
+It should be noted that this utility isn't the actual program used to create the HTML for seach.cpan.org. However, the output should visually be the same.
 
 This module comes with a L<pod2cpanhtml> utility that will convert Pod to search.cpan.org style HTML on the command line.
 
@@ -101,26 +101,34 @@ The C<new> method is used to create a new C<App::Pod2CpanHtml> object.
 
 =head2 Other methods
 
-C<App::Pod2CpanHtml> inherits all of the methods of its parent modules C<Pod::Simple> and C<Pod::Simple::HTML>. See L<Pod::Simple> for more details or if you need finer control over the output of this module.
+C<App::Pod2CpanHtml> inherits all of the methods of its parent modules C<Pod::Simple> and C<Pod::Simple::HTML>. See L<Pod::Simple> for more details if you need finer control over the output of this module.
 
 
 =head1 RATIONALE
 
 This module is a very thin wrapper around L<Pod::Simple::HTML>. I wrote the initial version is response to a question on Perlmonks L<http://www.perlmonks.com/?node_id=596075>.
 
-Despite its simplicity it has proved to be very useful tool for proofing Pod documentation prior to uploading it to CPAN. It is also the basis of a script that I frequently copy from machine to machine and it is the answer to a question that is frequently asked on Perl forums. As such, I thought it was time to roll it into a module.
+Despite its simplicity it has proved to be very useful tool for proofing Pod documentation prior to uploading to CPAN. It is also the basis of a script that I frequently copy from machine to machine and it is the answer to a question that is frequently asked on Perl forums. As such, I thought it was time to roll it into a module.
 
 
 =head1 SEE ALSO
 
 This module also installs a L<pod2cpanhtml> command line utility. See C<pod2cpanhtml --help> for details.
 
+You can render a Pod document using search.cpan's own engine at the following link: L<http://search.cpan.org/pod2html>.
+
+Graham Barr's patch to Pod::Simple to produce the search.cpan output: L<http://cpan.org/authors/id/G/GB/GBARR/search.cpan.org-Pod-Simple-HTML.patch>
+
+See L<Pod::ProjectDocs> for generating multiple, inter-linked, search.cpan like documents
+
 
 =head1 ACKNOWLEDGEMENTS
 
 Thanks to Sean M. Burke and the past and current maintainers for C<Pod::Simple>.
 
-Thanks to everyone involved with L<http://search.cpan.org>.
+Thanks to Graham Barr and everyone involved with L<http://search.cpan.org>.
+
+Thanks to Lars Dieckow for the useful links.
 
 The initial structure of this module was created using L<Module::Starter>, thanks to Andy Lester.
 

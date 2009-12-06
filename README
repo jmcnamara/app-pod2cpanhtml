@@ -2,8 +2,8 @@ NAME
     App::Pod2CpanHtml - Convert Pod to search.cpan.org style HTML.
 
 DESCRIPTION
-    This module is used for converting Pod documents to
-    http://search.cpan.org style HTML.
+    This module is used for converting Pod documents to search.cpan.org
+    style HTML.
 
     Pod is Perl's "Plain Old Documentation" format, see perlpod.
 
@@ -11,11 +11,9 @@ DESCRIPTION
     using the same conversion module, Pod::Simple::HTML and the same CSS,
     http://search.cpan.org/s/style.css.
 
-    It should be noted, however, that this isn't the actual module that is
-    used to create the HTML for seach.cpan.org; that source code isn't
-    currently in the public domain. As such the HTML may not be identical
-    but in most cases it will be quite close and visually it should be the
-    same.
+    It should be noted that this utility isn't the actual program used to
+    create the HTML for seach.cpan.org. However, the output should visually
+    be the same.
 
     This module comes with a pod2cpanhtml utility that will convert Pod to
     search.cpan.org style HTML on the command line.

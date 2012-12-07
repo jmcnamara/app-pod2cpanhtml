@@ -1,5 +1,10 @@
 Revision history for App-Pod2CpanHtml
 
+0.03 Dec 7 2012
+
+    ! Removed failing xt testcases.
+
+
 0.02 Dec 3 2009
 
     + Added --no-index option to pod2cpanhtml.

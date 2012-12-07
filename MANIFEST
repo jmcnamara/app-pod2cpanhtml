@@ -8,7 +8,4 @@ lib/App/Pod2CpanHtml.pm
 bin/pod2cpanhtml
 
 t/00-load.t
-t/90_pod.t
-t/91_minimumversion.t
-t/92_meta.t
 

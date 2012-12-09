@@ -1,5 +1,11 @@
 Revision history for App-Pod2CpanHtml
 
+0.04 Dec 9 2012
+
+    ! Fixed typo in docs. RT#71307.
+      Thanks to John P. Linderman.
+
+
 0.03 Dec 7 2012
 
     ! Removed failing xt testcases.
@@ -15,4 +21,3 @@ Revision history for App-Pod2CpanHtml
 0.01 Nov 29 2009
 
     Initial CPAN release.
-

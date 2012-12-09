@@ -16,7 +16,7 @@ use Pod::Simple::HTML;
 use vars qw(@ISA $VERSION);
 
 @ISA     = 'Pod::Simple::HTML';
-$VERSION = '0.03';
+$VERSION = '0.04';
 
 ###############################################################################
 #
@@ -61,7 +61,7 @@ This module comes with a L<pod2cpanhtml> utility that will convert Pod to search
 =head1 SYNOPSIS
 
 
-To create a simple filter to convert Pod to to search.cpan.org style HTML.
+To create a simple filter to convert Pod to search.cpan.org style HTML.
 
     #!/usr/bin/perl -w
 

@@ -29,7 +29,7 @@ sub new {
     my $class                   = shift;
     my $self                    = Pod::Simple::HTML->new(@_);
        $self->{index}           = 1;
-       $self->{html_css}        = 'http://search.cpan.org/s/style.css';
+       $self->{html_css}        = 'https://metacpan.org/_assets/a8fd6d5b3ab38bf9f7a75c704e84134a4f1d0fea.css';
 
     bless  $self, $class;
     return $self;
